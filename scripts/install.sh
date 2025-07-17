@@ -1,2 +1,2 @@
-cd /home/ubuntu/myapp
+cd /home/ubuntu/app
 npm install

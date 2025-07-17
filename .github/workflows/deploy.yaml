@@ -11,10 +11,10 @@ jobs:
 
     env:
       AWS_REGION: ap-northeast-2
-      S3_BUCKET: 0717-dist
+      S3_BUCKET: 0717-bucket
       S3_KEY: release/dist.zip
-      CODEDEPLOY_APP: 0717CodeDeploy
-      CODEDEPLOY_GROUP: 0717dg
+      CODEDEPLOY_APP: 0717-cd-app
+      CODEDEPLOY_GROUP: 0717-cd-dg
 
     steps:
       - name: Checkout source
