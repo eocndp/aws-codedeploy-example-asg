@@ -12,7 +12,7 @@ jobs:
     env:
       AWS_REGION: ap-northeast-2
       S3_BUCKET: exam-codedeploy-bucket
-      S3_KEY: release/dist.zip
+      S3_KEY: dist.zip
       CODEDEPLOY_APP: ExamCodeDeployApp
       CODEDEPLOY_GROUP: ExamDeploymentGroup
 
