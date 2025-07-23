@@ -31,6 +31,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
 
+      - name: Delete old artifact from S3
+        run: |
+          aws s3 rm s3://$S3_BUCKET/$S3_KEY || true
+
       - name: Upload artifact to S3
         run: |
           aws s3 cp dist.zip s3://$S3_BUCKET/$S3_KEY
