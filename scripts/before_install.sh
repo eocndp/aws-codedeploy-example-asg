@@ -1,3 +1,4 @@
 #!/bin/bash
 echo "Cleaning old app files..."
-sudo rm -rf /home/ubuntu/app/*
+sudo chown -R ubuntu:ubuntu /home/ubuntu/app
+rm -rf /home/ubuntu/app/*
