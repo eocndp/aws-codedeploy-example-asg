@@ -11,10 +11,10 @@ jobs:
 
     env:
       AWS_REGION: ap-northeast-2
-      S3_BUCKET: TODO
+      S3_BUCKET: exam-codedeploy-bucket
       S3_KEY: release/dist.zip
-      CODEDEPLOY_APP: TODO
-      CODEDEPLOY_GROUP: TODO
+      CODEDEPLOY_APP: ExamCodeDeployApp
+      CODEDEPLOY_GROUP: ExamDeploymentGroup
 
     steps:
       - name: Checkout source
