@@ -6,10 +6,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/version', (req, res) => {
+app.get('/health', (req, res) => {
     res.json({
+        status: 'OK',
         version: '1.0.0',
-        description: 'AWS CodeDeploy Example Application'
     })
 })
 
